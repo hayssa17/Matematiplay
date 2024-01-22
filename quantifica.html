@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-quantifica.css">
+  <title>Quantifica</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button id="button" onclick="voltarIndex()">VOLTAR</button>
+  <div id="container">
+    <h1>QUAL IMAGEM TEM MAIS OBJETOS?</h1>
+    <div id="container-imagens"></div>
+
+    <div id="input-container" style="display: none;">
+      <input type="number" id="quantidadeInput" placeholder="Quantos objetos?">
+      <button id="enviarButton" onclick="enviarResposta()">ENVIAR</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+  <audio id="perguntaInicial" autoplay>
+    <source src="audio/quantifica/pergunta-inicial.mp3" type="audio/mp3">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <audio id="audioRespCerta">
+    <source src="audio/quantifica/audio-certo.mp3" type="audio/mp3">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+
+
+  <footer>
+    <p id="rodape">
+      © Desenvolvido por
+      <a class="link_rodape" href="https://www.linkedin.com/in/carlos-junior-8892831b9/">
+        Carlos Junior
+      </a>,
+      <a class="link_rodape" href="#"> Hayssa Barroso </a> - 2024
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script-quantifica.js"></script>
+</body>
+
+</html>

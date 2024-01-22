@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-jogo-memoria.css">
+  <title>Jogo da Memória</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button id="voltarButton" onclick="voltarIndex()">VOLTAR</button>
+
+  <div class="timer-container">
+    <h1>JOGO DA MEMÓRIA</h1>
+    <div id="timer">00:00</div>
+  </div>
+
+  <div class="memory-game"></div>
+  <!-- Cards will be dynamically added here using JavaScript -->
+
+  <audio id="audio" src="audio/0.mp3"></audio>
+  <footer>
+    <p id="rodape">
+      © Desenvolvido por
+      <a class="link_rodape" href="https://www.linkedin.com/in/carlos-junior-8892831b9/" target="_blank">
+        Carlos Junior
+      </a>,
+      <a class="link_rodape" href="www.linkedin.com/in/
+        hayssa-brito-barroso-8937581ab/" target="_blank"> Hayssa Barroso </a> - 2024
+    </p>
+  </footer>
+
+  <script src="script-jogo-memoria.js"></script>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Parabéns!</h2>
+      <p>Você concluiu o jogo em <span id="popup-time"></span> segundos!</p>
+      <button id="closeButton">Fechar</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

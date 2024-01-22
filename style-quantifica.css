@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #FFC9B5;
+}
+
+h1 {
+  font-family: 'Bungee Spice', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lemon', serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #FF0000;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#container-imagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Permite que as imagens quebrem para a próxima linha em telas pequenas */
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  transition: border 0.3s;
+
+}
+
+#imagem-pontuacao {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+/* Adicionando regras para personalizar as cores do título do SweetAlert2 */
+.swal2-popup .swal2-title {
+  color: green; /* Cor para 'Resposta correta!' */
+}
+
+.swal2-popup.error .swal2-title {
+  color: red; /* Cor para 'Resposta incorreta. Tente na próxima.' */
+}
+
+/* Adicionando regras para frase condicional*/
+.frase-condicional {
+  font-size: 1.5em;
+  /* Tamanho da fonte */
+  /* Outras propriedades de estilo conforme necessário */
+}
+
+.pontuacao-alta {
+  color: green;
+  /* Cor para pontuações altas */
+}
+
+.pontuacao-baixa {
+  color: red;
+  /* Cor para pontuações baixas */
+}
+
+
+/* Adiciona estilos para a borda vermelha de erro */
+.imagem-errada {
+  border: 10px solid transparent;
+  animation: piscarVermelho 1s 2;
+}
+
+/* Adiciona estilos para a borda verde de acerto */
+.imagem-certa {
+  border: 10px solid transparent;
+  animation: piscarVerde 1s 2;
+}
+
+/* Adiciona a animação de piscar vermelho */
+@keyframes piscarVermelho {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #FF0000;
+  }
+}
+
+/* Adiciona a animação de piscar verde */
+@keyframes piscarVerde {
+
+  0%,
+  100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #1e6e4d;
+  }
+}
+
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#enviarButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #C2F8CB;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #C2F8CB;
+  color: black;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#button:hover, #enviarButton:hover {
+  background-color: #FF0000;
+  color: white;
+}
+
+#resultado {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+
+footer {
+  background-color: #000000;
+  text-align: center;
+  font-family: 'Bungee Spice', sans-serif;
+  font-size: 0.8em;
+  width: 100%;
+  padding: 0.1%;
+
+
+}
+
+#rodape {
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Lemon', serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.link_rodape:hover {
+
+  font-size: 1.1em;
+  /* Aumentar o tamanho da fonte ao passar o mouse */
+}
+
+/* Adiciona uma regra de mídia para telas pequenas */
+@media screen and (max-width: 600px) {
+  #container-imagens {
+    margin: 0;
+    /* Redefine a margem para 0 em telas pequenas */
+  }
+
+  img {
+    margin: 5px;
+    /* Redefine a margem entre as imagens para 5px em telas pequenas */
+  }
+}
+
+/* Adiciona uma regra de mídia para telas grandes */
+@media screen and (min-width: 601px) {
+  #container-imagens {
+    flex-direction: row;
+    /* Define a direção do flex para linha em telas grandes */
+    justify-content: center;
+    /* Centraliza as imagens na linha */
+  }
+
+  img {
+    margin: 10px;
+    /* Aumenta a margem entre as imagens para 10px em telas grandes */
+  }
+}
