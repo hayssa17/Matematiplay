@@ -16,7 +16,7 @@ function reproduzirAudio() {
   perguntaInicial.play();
 }
 
-const imagens = Array.from({ length: 14 }, (_, index) => `imagem/quantifica/${index}.jpg`);
+const imagens = Array.from({ length: 21 }, (_, index) => `imagem/quantifica/${index}.jpg`);
 let rodadaAtual = 0;
 let acertos = 0;
 let imagem1, imagem2;
