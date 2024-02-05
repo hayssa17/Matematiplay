@@ -172,14 +172,23 @@ footer {
   text-align: center;
   font-family: 'Bungee Spice', sans-serif;
   font-size: 0.8em;
+  color: white;
   width: 100%;
-  padding: 0.1%;
+  position: fixed;
+  bottom: 0;
+}
 
-
+@media screen and (max-width: 767px) {
+  footer {
+    position: relative;
+    margin-top: auto;
+    /* Adicionei para ocupar o espaço restante na tela */
+  }
 }
 
 #rodape {
   font-weight: bold;
+  color: white;
 }
 
 p {
