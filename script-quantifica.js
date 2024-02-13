@@ -188,6 +188,9 @@ function exibirInput() {
   inputContainer.appendChild(botaoEnviar);
 
   containerResultado.appendChild(inputContainer);
+  
+  // Dá foco ao campo de input assim que ele é exibido
+  inputAdivinhar.focus();
 }
 
 
