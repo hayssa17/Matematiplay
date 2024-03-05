@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #195c9b;
+  background-image: url('imagem/Group.png');
 }
 
 h1 {
@@ -18,7 +18,12 @@ h2 {
   font-size: 2.5em;
   font-weight: bold;
   text-align: center;
-  color: #FF0000;
+  color: #ffffff;
+  text-shadow: 
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000; /* Adiciona sombras para criar o contorno */
 }
 
 #container {
@@ -72,11 +77,21 @@ img {
 .pontuacao-alta {
   color: green;
   /* Cor para pontuações altas */
+  text-shadow: 
+  -2px -2px 0 #000,  
+   2px -2px 0 #000,
+  -2px  2px 0 #000,
+   2px  2px 0 #000; /* Adiciona sombras para criar o contorno */
 }
 
 .pontuacao-baixa {
   color: red;
   /* Cor para pontuações baixas */
+  text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000; /* Adiciona sombras para criar o contorno */
 }
 
 

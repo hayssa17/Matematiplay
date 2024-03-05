@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #195c9b;
+  background-image: url('imagem/Group.png');
 }
 
 .presentation-container {
@@ -16,7 +16,7 @@ body {
 
 .game-title {
   font-family: 'Bungee Spice', sans-serif;
-  font-size: 1.5em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #FF0000;
   margin-bottom: 10px;
@@ -25,7 +25,12 @@ body {
 p {
   
   font-family: 'Lemon', serif;
-  color: #ff0000;
+  color: #f5f1f1;
+  text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000; /* Adiciona sombras para criar o contorno */
 }
 
 .game-description {
@@ -48,13 +53,17 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  background-color: #195c9b;
-  color: black;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 1.3em;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
+  text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000; /* Adiciona sombras para criar o contorno */
 }
 
 .game-option img {
@@ -64,8 +73,14 @@ p {
 }
 
 .game-option:hover {
-  background-color: #FF0000;
-  color: white;
+  background-color: #e40909;
+  color: rgb(7, 7, 7);
+  text-shadow: 
+  -1px -1px 0 #ffffff,  
+   1px -1px 0 #ffffff,
+  -1px  1px 0 #ffffff,
+   1px  1px 0 #ffffff; /* Adiciona sombras para criar o contorno */
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -115,3 +130,13 @@ a:visited {
   font-size: 1.1em;
   /* Aumentar o tamanho da fonte ao passar o mouse */
 }
+
+
+
+.btn.btn-success {
+  margin: 10px; 
+}
+
+
+
+

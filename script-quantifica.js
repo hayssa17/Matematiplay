@@ -220,7 +220,7 @@ function exibirResultadoFinal() {
 
   // Exibe o número de acertos no contêiner de resultado
   const resultadoFinal = document.createElement('h2');
-  resultadoFinal.textContent = `Você acertou ${acertos} vezes! Sua nota foi ${porcentagemAcertos}!`;
+  resultadoFinal.insertAdjacentHTML('beforeend', `Você acertou ${acertos} vezes!<br>Sua nota foi ${porcentagemAcertos}!`);
   containerResultado.appendChild(resultadoFinal);
 
   // Adiciona a imagem do mascote
@@ -239,6 +239,7 @@ function exibirResultadoFinal() {
     fraseCondicional.classList.add('pontuacao-alta');
   } else {
     fraseCondicional.classList.add('pontuacao-baixa');
+    imagemPontuacao.src = 'imagem/mascoteTriste.png';
   }
 
   containerResultado.appendChild(fraseCondicional);
