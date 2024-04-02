@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('imagem/Group1.png');
+}
+
+.titulo{
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FF0000;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+.conteudo {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px;
+}
+
+p {
+    color: #f5f1f1;
+    text-align: justify;
+}
+
+.equipe{
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.card-text{
+    color: #000000;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  
+#rodape {
+    font-weight: bold;
+    color: white; 
+    text-align: center;
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+  a:visited {
+      color: white;
+  }
+  
+  .link_rodape:hover {
+  
+    font-size: 1.1em;
+    /* Aumentar o tamanho da fonte ao passar o mouse */
+  }
+
+.btn.btn-success {
+    margin: 10px; 
+}
