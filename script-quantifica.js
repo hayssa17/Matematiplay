@@ -28,6 +28,9 @@ function iniciarJogo() {
     exibirResultadoFinal();
     return;
   }
+   // Atualiza o contador de progresso
+   const contador = document.getElementById('contador');
+   contador.textContent = `${rodadaAtual + 1} / 10`;
 
   // Limpa o contêiner de imagens antes de começar uma nova rodada
   const containerImagens = document.getElementById('container-imagens');

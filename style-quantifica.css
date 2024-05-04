@@ -253,3 +253,15 @@ a:visited {
     /* Aumenta a margem entre as imagens para 10px em telas grandes */
   }
 }
+
+
+.contador {
+  position: fixed; /* Permite posicionar o contador em relação à janela de visualização */
+  top: 20px; /* Ajusta a distância do topo da janela */
+  right: 20px; /* Ajusta a distância da direita da janela */
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto */
+}
+
