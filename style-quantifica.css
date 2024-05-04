@@ -156,7 +156,7 @@ input[type="number"] {
 }
 
 #button {
-  float: right;
+  float: left;
   margin-top: 10px;
   margin-right: 10px;
   display: flex;

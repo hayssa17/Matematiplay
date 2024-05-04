@@ -71,3 +71,18 @@ a {
 .btn.btn-success {
     margin: 10px; 
 }
+
+.custom-container {
+  max-width: 900px; /* Defina o tamanho máximo da sua div */
+  margin: 0 auto; /* Centralize a div horizontalmente */
+}
+
+.custom-img {
+  width: 100%; /* Tornar as imagens responsivas */
+  height: 200px; /* Defina a altura desejada para as imagens */
+  object-fit: cover; /* Garante que a imagem cubra o espaço, mantendo sua proporção */
+}
+
+.card {
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
+}
